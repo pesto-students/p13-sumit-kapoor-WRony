@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This birtday message creator form">
+    <title>Birthday Message</title>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday Message creator</h1>
+    </header>
+    <main>
+        <section id="bdayForm">
+            <form method="Post">
+                <article id="Message">
+                    <label for="txtMessage" id="lblmessage">Message?</label>
+                    <input type="text" id="txtMessage" required />
+                </article>
+                <article id="Email">
+                    <label for="txtEmail" id="lblEmail">Email address?</label>
+                    <input type="text" id="txtEmail"  pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}" />
+                </article>
+                <article id="Date">
+                    <label for="txtDate" id="lblDate">Date to send?</label>
+                    <input type="date" id="txtDate"  />
+                </article>
+                <article id="Color">
+                    <label for="txtColor" id="lblColor">Message color?</label>
+                    <input type="color" id="txtColor"  />
+                </article>
+                <article id="Number">
+                    <label for="txtNumber" id="lblNumber">Number of blinks?</label>
+                    <input type="number" id="txtNumber"  min="0" max="10" value="0"/>
+                </article>
+                <article id="Range">
+                    <label for="txtRange" id="lblRange">Music volume?</label>
+                    <input type="range" id="txtRange"  min="0" max="50" value="20" />
+                </article>
+                
+                <input type="submit" value="Send Birthday Message" /> 
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page is the Add review page of restaurant review website"
+    />
+    <title>AddReview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant Reviews</h1>
+      <br />
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./addreview.html">Add Review</a></li>
+          <li><a href="./about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h3>Add review:</h3>
+      <form method="post" action="./index.html">
+        <section id="secName">
+          <label for="txtName" id="lblName">Name?</label>
+          <input type="text" id="txtName" required>
+        </section><br>
+        <section id="secResturant">
+          <lablel for="opResturant" id="lblResturant">Restaurant?</lablel>
+          <select required>
+            <option>Choose</option>
+            <option>Main Street</option>
+            <option>Greek House</option>
+
+          </select>
+        </section><br>
+        <section id="secDateofVisit">
+          <label for="txtDate" id="lblDate">Date of Visit?</label>
+          <input type="date" id="txtDate" required>
+        </section><br>
+        <section id="secRating">
+          <label for="txtRating" id="lblRating">Rating?</label>
+          <input type="number" step="1" value="1" max="5" id="txtRating" required>
+        </section>
+        <section><br>
+          <label for="txtDetails" id="lblDetails">Details?</label>
+          <textarea  id="txtDetails" rows="5" cols="50"></textarea>
+        </section><br>
+        <section id="secSubmit">
+          <input type="submit" id="btnSubmit">
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

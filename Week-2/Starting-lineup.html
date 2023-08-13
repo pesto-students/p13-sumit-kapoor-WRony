@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Starting line up page" >
+    <title>Starting-Lineup</title>
+</head>
+<body>
+    <header>
+        <h1>Starting Lineup</h1>
+    </header>
+    <form method="post">
+        <article id="status">
+            <fieldset id="fldFieldset">
+                <legend>Status</legend>
+                <input type="radio" id="radioDraft"/>
+                <label for="radioDraft">Draft</label>
+                <input type="radio" id="radioFinal" checked/>
+                <label for="radioFinal">Final</label>
+            </fieldset>
+            
+        </article><br>
+        <article id="calendarSelect">
+            <label for="selectCalendar" id="lblCalendar">Date:</label>
+            <select id="selectCalendar">
+                <option>March 20</option>
+                <option>March 24</option>
+                <option>April 2</option>
+                <option>April 6</option>
+                <option>April 13</option>
+            </select>
+        </article> <br>
+<!--Aarav
+Agarwal, Ava Johnson, Julio Ortiz, Liam Rubio, Emma Witherspoon-->
+        <article id="Players">
+            <fieldset id="fldPlayers">
+                <legend>Players</legend>
+                <input type="checkbox" name="player" value="Aarav" id="chkArav"/>
+                <label for="chkArav" id="lblArav">Aarav Agarwal</label><br>
+                <input type="checkbox" name="player" value="Ava" id="chkAva"/>
+                <label for="chkAva" id="lblAva">Ava Johnson</label><br>
+                <input type="checkbox" name="player" value="Julio" id="chkJulio"/>
+                <label for="chkJulio" id="lblJulio">Julio Ortiz</label><br>
+                <input type="checkbox" name="player" value="Liam" id="chkJLiam"/>
+                <label for="chkLiam" id="lblLiam">Liam Rubio</label><br>
+                <input type="checkbox" name="player" value="Emma" id="chkJEmma"/>
+                <label for="chkEmma" id="lblEmma">Emma Witherspoon</label>
+            </fieldset>
+        </article><br>
+        <input type="submit"/>
+
+    </form>
+</body>
+</html>
