@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is about Product rating">
+    <title>Rate of Product</title>
+    <link rel="stylesheet" href="./ProductRate.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                Rate a Product
+            </h1>
+        </header>
+        <article>
+            <form id="ProductRating" method="post">
+                <p>indicates required filed.</p><br>
+                <label for="txtProduct" id="lblProduct" class="labelText">Product</label>
+                <input type="text" class="inputBox" id="txtProduct" required>
+
+                <label for="txtPurchaseDate" id="lblPurchaseDate" class="labelText">Purchase Date</label>
+                <input type="date" class="inputBox" id="txtPurchaseDate" required>
+
+                <label for="txtRating" id="lblRating" class="labelText">Rating</label>
+                <input type="number" class="inputBox" id="txtRating" required>
+
+                <label for="txtComment" id="lblRating" class="labelText">Comment</label>
+                <textarea class="inputBoxArea" cols="5" rows="5" id="txtComment"></textarea>
+
+                <input type="submit" value="Submit Of Rating">
+                
+
+            </form>
+        </article>    
+        
+    </main>
+</body>
+</html>
