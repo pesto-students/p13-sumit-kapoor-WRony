@@ -1,0 +1,136 @@
+:root {
+    --theme-color: #7395AE;
+    --theme-dark-color: #557A95;
+    --primary-font-color: #5D5C61;
+    --link-font-color: white;
+ }
+ 
+ body {
+    font-family: Helvetica, sans-serif;
+    color: var(--primary-font-color);
+    padding: 10px;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: var(--theme-dark-color);
+ }
+ 
+ header {
+    margin: 0;
+ }
+ 
+ header > h1 {
+    color: var(--theme-dark-color);
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 3px gray;
+ }
+ 
+ nav {
+    background-color: var(--theme-color);
+ }
+ 
+ nav ul {
+    
+
+    
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+  
+ }
+ 
+ nav li {
+    padding: 10px;
+ }
+ 
+ nav li a {
+    color: var(--link-font-color);
+    text-decoration: none;
+ }
+ 
+ nav li a:hover {
+    text-decoration: none;
+    color: var(--link-font-color);
+    background-color: var(--theme-dark-color);
+ }
+ 
+ nav {
+    font-size: larger;
+ }
+ 
+ main {
+    margin: 0;
+ }
+ 
+ main > section {
+    margin-top: 30px;
+ }
+ 
+ footer {
+    margin-top: 30px;
+ }
+ 
+ .benefits-inner-container {
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ .benefit {
+    color: var(--theme-dark-color);
+    
+ }
+ 
+ @media screen and (min-width: 481px) {
+   header > h1 {
+      
+      font-size: 2gitrem;
+      margin-left: 10px;
+   }
+   
+      img{
+         width: 100%;
+         display: flex;
+         
+      }
+      
+   
+}
+
+ @media screen and (min-width: 768px) {
+   header > h1 {
+      
+      font-size: 2rem;
+      margin-left: 10px;
+   }
+   
+      img{
+         width: 100%;
+         display: flex;
+
+      }
+      
+   
+}
+
+   @media screen and (min-width: 820px) {
+      nav ul{
+         display: flex;
+         padding-left: 0;
+         margin-bottom: 0;
+         flex-direction: row;
+      }
+
+      body{
+         font-size: 20px;
+      }
+      img{
+         width: 100%;
+      }
+      h3{
+         margin-top: 2px;
+      }
+ }
